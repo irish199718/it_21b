@@ -46,3 +46,15 @@ rl.question("Enter your choice (1-3): ", choice =>{
     }
 
 })
+
+function mainMenu(){
+    console.log("Main Menu");
+}
+ function sayHello(){
+    console.log("Hello");
+}
+ function computerFactorial(){
+    console.log("Factorial");
+}
+
+mainMenu();
