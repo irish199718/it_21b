@@ -27,3 +27,7 @@ function mainMenu(){
 
     })
 }
+
+function sayHello(){
+    console.log("Hello");
+}
