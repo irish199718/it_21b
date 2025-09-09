@@ -37,7 +37,7 @@ rl.question("Enter your choice (1-3): ", choice =>{
             }
         })
 
-
+            backToMainMenu();
 
     } else if (choice === "3"){
         console.log("Exiting Application");
@@ -56,5 +56,11 @@ function mainMenu(){
  function computerFactorial(){
     console.log("Factorial");
 }
-
+function exitProgram(){
+    console.log("exitProgram");
+}
+function backToMainMenu(){
+    console.log("---------------------------");
+    console.log("1. back to Main Menu");
+    console.log("2. exit main menu");}
 mainMenu();
