@@ -31,3 +31,8 @@ function mainMenu(){
 function sayHello(){
     console.log("Hello");
 }
+
+function computeFactorial(){
+    console.log("Factorial");
+    
+}
