@@ -33,15 +33,6 @@ const warrior = new Warrior("Thorin", 100, 10);
 const hero2 = new Hero("Gandalf", 100, 8);
 
 
-throwDeprecation.userAbility();
+Thorin.showStats();
+Thorin.userAbility();
 
-
-
-
-
-
-
-console.log(hero1.getName());
-console.log(hero1.getHealth());
-console.log(hero1.getName());
-console.log(hero2.getName());
