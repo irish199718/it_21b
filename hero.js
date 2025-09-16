@@ -23,16 +23,35 @@ class Hero{
 }
 class Warrior extends Hero{
     userAbility(){
-        console.log('$'this.name + " used Power Strike!");
+        console.log(`${this.name} + 'used Power Strike!`);
+    }
+}
+
+class Mage extends Hero{
+    constructor(name, health, attack, mana){
+        super(name, health, attack);
+        this.mana = mana;
     }
 
+    userAbility(){
+        console.log(`${this.name} + 'used Fireball!`);
+    }
+
+    
+
+    showStats(){
+        super.showStats();
+        console.log("Mana: " + this.mana);
+    }
 }
 
 
-const warrior = new Warrior("Thorin", 100, 10);
-const hero2 = new Hero("Gandalf", 100, 8);
 
 
-Thorin.showStats();
-Thorin.userAbility();
+const Thorin = new Warrior("Thorin", 100, 10);
+const Gandalf = new Hero("Gandalf", 100, 8,50);
 
+//Thorin.showStats();
+//Thorin.userAbility();
+ Gandalf.showStats();
+ Gandalf.userAbility();
