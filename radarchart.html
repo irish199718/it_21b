@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Radar Chart</h1>
+    <div>
+        <canvas id="radarChart"></canvas>
+    </div>
+    
+</body>
+<script>
+    class radarchart{
+        constructor(canvasId,dataUrl){
+            this.canvasId = canvasId;
+            this.dataUrl = dataUrl;
+            this.chart = null;
+        }
+
+        renderChart(data){
+            const ctx = document.getElementById(this.canvasId).getContext("2d");
+
+            this.chart = new Chart(ctx,{
+                type:"radar",
+                data:{
+                    //labels
+                    labels:data.labels,
+                    //Datasets
+                    datasets: data.datasets
+                },
+                Options:{
+                    responsive: true,
+                    plugins:{
+                        legend:{
+                            position:"top"
+                        },
+                        title:{
+                            display: true,
+                            //title
+                            text: "Radar Chart"
+                        }
+                    },
+                    scales:{
+                        r:{
+
+                            anglelines:{display:true},
+                            suggestedMin:0,
+                            suggestedMax:100
+                        }
+                    }
+                }
+            });
+        }
+
+        async fetchData(){
+            try{
+                const response = await fetch
+            }
+        }
+        
+    
+</script>
+</html>
