@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Line Charts</title>
-</head>
-<body>
-    <h1>Line Chart</h1>
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</script>
-      class LineChart{
+ class radarChart{
         constructor(canvasId, dataUrl){
             this.canvasId = canvasId;
             this.dataUrl = dataUrl;
