@@ -11,7 +11,15 @@
         background-color: rgb(255, 255, 255);
     }
     .container div{
-        width: 50%
+        width: 50%;
+        margin: 10px;
+    }
+        .dashboard-card{
+        /*Card Properties*/
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0 2);
+        transition: 0.3s;
+        border-radius: 10px;
+        padding: 20px;
     }
 
 </style>
@@ -21,20 +29,21 @@
     <h1>dashboard</h1>
     
     <div class="container">
-    </div>
+    </div class="dashboard-card">
          <canvas id="lineChart"></canvas>
+           
             <div>
+                
             </div>
-
+            </div class="dashboard-card">
             <canvas id="radarChart"></canvas>
         </div>
     </div>
 
     </body>
 
-    <canvas id="lineChart"></canvas>
-    <canvas id="radarChart"></canvas>
-</body>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="dashboard.js"></script>
+</body>
 </html>
