@@ -1,9 +1,11 @@
- class radarChart{
+ 
+      class LineChart{
         constructor(canvasId, dataUrl){
             this.canvasId = canvasId;
             this.dataUrl = dataUrl;
             this.chart = null;
         }
+    };
 
         renderChart(data){
             const ctx = document.getElementById(this.canvasId).getContext("2d");
@@ -58,7 +60,6 @@
         const chart = new LineChart("lineChart","linedata.json");
         chart.init();
     });
-</script>
     
 </body>
 </html>
